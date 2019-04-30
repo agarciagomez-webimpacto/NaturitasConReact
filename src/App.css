@@ -1,0 +1,167 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: .95rem;
+}
+#numerocarro{
+  background: #D0DE58;
+  left: 8px;
+  top: -10px;
+  position: relative;
+  border-radius: 30%;
+  font-size: .6rem !important;
+  
+}
+ #search button{
+  background:  #5CB8A3 !important;
+  color: white;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#search input{
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #FBFAF9;
+  border-color: rgb(238, 238, 238);
+  height: 2.3rem;  
+}
+
+#extrasHeader span{
+  color: #3f3f3f !important;
+  font-size: .9rem;
+  
+}
+
+a{
+  color: #585858 !important;
+}
+
+.menu{
+  background: rgb(247, 247, 247);
+  font-weight: 500
+}
+
+.menu a:hover{
+  background: rgb(255, 255, 255);
+  font-weight: 500;
+  text-decoration-line: underline ;
+}
+
+
+
+.carrusel{
+max-width: 1440px;
+
+
+
+}
+#banner img{
+  width: 100%;
+
+
+}
+
+#footer{
+  background: #f1f1f1;
+}
+#segundoGrid{
+  max-width: 1440px;
+}
+#logofooter  {
+  text-align: center;
+  margin-top: 100px; 
+}
+#logofooter  img{
+  text-align: center;
+  position: relative;
+  top: -70px;
+  width: 140px;
+}
+
+#copy{
+  background: rgb(216, 216, 216);
+}
+
+
+
+
+
+
+
+/***********************MENU DESPLEGABLE********************/
+
+@media (max-width: 768px) {
+  #menudesktop {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 130%;
+  z-index: 2000;
+  left: -100%;
+  transition: all 1s;
+  border: 1px solid lightgrey;
+  top:-35px;
+ 
+  }
+ 
+
+
+  #menudesktop a{
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid lightgrey ;
+      padding: 10px;
+      
+  }
+
+  #menudesp:checked ~ #menudesktop{
+    left:0;
+    box-shadow: 49px 138px 44px 144px rgba(214, 203, 203, 0.4);
+
+} 
+
+}
+
+#headerSearch span{
+
+  font-size: 12px;
+
+}
